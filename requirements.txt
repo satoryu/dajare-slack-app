@@ -1,1 +1,2 @@
-slack_bolt~=1.22
+slack_bolt~=1.22.0
+requests~=2.32.3
