@@ -1,0 +1,46 @@
+{
+  "display_information": {
+      "name": "駄洒落App",
+      "description": "与えられたテキストから駄洒落を生成",
+      "background_color": "#000000"
+  },
+  "features": {
+      "bot_user": {
+          "display_name": "駄洒落App",
+          "always_online": false
+      },
+      "slash_commands": [
+          {
+              "command": "/dajare",
+              "description": "Make new puns from a given message",
+              "usage_hint": "[message to be dajare]",
+              "should_escape": false
+          }
+      ]
+  },
+  "oauth_config": {
+      "scopes": {
+          "bot": [
+              "chat:write",
+              "im:write",
+              "channels:history",
+              "im:history",
+              "commands"
+          ]
+      }
+  },
+  "settings": {
+      "event_subscriptions": {
+          "bot_events": [
+              "message.channels",
+              "message.im"
+          ]
+      },
+      "interactivity": {
+          "is_enabled": true
+      },
+      "org_deploy_enabled": false,
+      "socket_mode_enabled": true,
+      "token_rotation_enabled": false
+  }
+}
